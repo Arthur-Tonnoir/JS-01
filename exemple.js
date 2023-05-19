@@ -78,10 +78,8 @@ function ajoute(){
     let number;
     if(checkIdIsAlreadyExist(getIndex())){
         number = getIndex()+1;
-        console.log("1")
     }else{
         number = getIndex();
-        console.log("0")
     }
     
 
@@ -199,7 +197,6 @@ function checkIdIsAlreadyExist(id){
     
     for(var i = 0; i <= getIndex(); i++){
         let element = document.getElementById("block-" + i);
-        console.log(element)
         if(element != null){
            if(element.id.substring(6) == id){
                 resultat = true;
